@@ -141,7 +141,7 @@ else:
     print("Starting preprocess...")
     # Extracting labels from sentences.
     labels = [line.split(' ', 1)[0] for line in lines]
-    sentences = [line.split(' ', 1)[1].rstrip() for line in lines]
+    sentences = [line.split(' ', 1)[1].strip() for line in lines]
 
     result_prediction = []
     end_latency_time_counter = time.time()
